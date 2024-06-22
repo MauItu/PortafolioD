@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedinIcon from '../components/Icons/Linkedin.astro'
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from '../components/Icons/GitHub.astro';
+import MailIcon from '../components/Icons/Mail.astro'
+import Experience from '../components/Experience.astro';
+---
+
+<Layout title="Porfolio de Daniel iturriza Programador y desarrollador con 30 a;os de xp">
+	<main>
+
+		<section class="w-full mx-auto lg:w-[720px] py-44">
+			
+		<h1 class="text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10">
+			Epa chamo que mas
+			<a
+			href="https://www.linkedin.com/in/daniel-iturriza"
+			target="_blank"
+			rel="noopener"
+			class="flex justify-center items-center"
+			
+			>
+			</a> 
+			
+			<div 
+			class="flex justify-center items-center"><Badge>Disponible para workear</Badge>
+			</div>
+		</h1>
+		<h2 class="text-xl ">40 a;os de eperiencia, estas viejo dani,  desarrollador de 
+			sofware y mas texto para ir probando como se comparta el alrgo del texto
+		</h2>
+		
+		<nav class="flex gap-x-2">
+			<SocialPill href="https://linkedin.com/in/daniel-iturriza">
+				<LinkedinIcon class="size-6"/>
+				Linkedin
+			</SocialPill>
+
+			<SocialPill href="https://github.com/MauItu">
+				<GitHubIcon class="size-6"/>
+					GitHub
+			</SocialPill>
+			<SocialPill>
+				<MailIcon class="size-6"/>
+				diturriza@gmail.com
+			</SocialPill>
+
+
+		</nav>
+	</section>
+	<section class="flex justify-center">
+		<Experience/>
+	</section>
+	</main>
+</Layout>
